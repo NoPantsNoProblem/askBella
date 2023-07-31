@@ -1,9 +1,27 @@
 # pdfGPT
 ## Demo
-1. **Demo URL**: https://bit.ly/41ZXBJM
+1. **Demo URL**: https://bhaskartripathi-pdfgpt-turbo.hf.space
+2. **Demo Video**:
+   
+   [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/LzPgmmqpBk8/0.jpg)](https://www.youtube.com/watch?v=LzPgmmqpBk8)
+#### Version Updates (27 July, 2023):
+1. Improved error handling
+2. PDF GPT now supports Turbo models and GPT4 including 16K and 32K token model.
+3. Pre-defined questions for auto-filling the input.
+4. Implemented Chat History feature.
+![image](https://github.com/bhaskatripathi/pdfGPT/assets/35177508/11549b24-9ed4-4dcb-a877-bad9c2266bf9)
 
-**NOTE**: Please star this project if you like it!
 
+### Note on model performance
+```If you find the response for a specific question in the PDF is not good using Turbo models, then you need to understand that Turbo models such as gpt-3.5-turbo are chat completion models and will not give a good response in some cases where the embedding similarity is low. Despite the claim by OpenAI, the turbo model is not the best model for Q&A. In those specific cases, either use the good old text-DaVinci-003 or use GPT4 and above. These models invariably give you the most relevant output.```
+
+# Upcoming Release Pipeline:
+1. Support for Falcon, Vicuna, Meta Llama
+2. OCR Support
+3. Multiple PDF file support
+4. OCR Support
+5. Node.Js based Web Application - With no trial, no API fees. 100% Open source.
+    
 ### Problem Description : 
 1. When you pass a large text to Open AI, it suffers from a 4K token limit. It cannot take an entire pdf file as an input
 2. Open AI sometimes becomes overtly chatty and returns irrelevant response not directly related to your query. This is because Open AI uses poor embeddings.
@@ -167,10 +185,22 @@ H -- Output --> I[Output]
 [![Star History Chart](https://api.star-history.com/svg?repos=bhaskatripathi/pdfGPT&type=Date)](https://star-history.com/#bhaskatripathi/pdfGPT&Date)
 I am looking for more contributors from the open source community who can take up backlog items voluntarily and maintain the application jointly with me.
 
-## Also Try:
-This app creates schematic architecture diagrams, UML, flowcharts, Gantt charts and many more. You simple need to mention the usecase in natural language and it will create the desired diagram.
-https://github.com/bhaskatripathi/Text2Diagram
+## Also Try TypeTruth:
+TypeTruth detects whether a text is written by a human or AI. Ideal for fact-checking and content validation in the age of AI content generators.
+https://github.com/bhaskatripathi/TypeTruth
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE.txt](LICENSE.txt) file for details.
 
+## Citation
+If you use PDF-GPT in your research or wish to refer to the examples in this repo, please cite with:
+
+```bibtex
+@misc{pdfgpt2023,
+  author = {Bhaskar Tripathi},
+  title = {PDF-GPT},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/bhaskatripathi/pdfGPT}}
+}
