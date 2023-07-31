@@ -1,3 +1,10 @@
+# ask Bella API, a copy of  github.com/askBella/askBella
+# This file is a part of the askBella project.
+# The askBella project is licensed under the MIT license.
+# License URL: 
+#
+# © 2023 Art Taradejna (github.com/askBella)
+
 import os
 import re
 import shutil
